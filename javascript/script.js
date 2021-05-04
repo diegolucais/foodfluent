@@ -1,26 +1,17 @@
 /* Password Validator */
 $(document).ready(function () {
-
      $('input[type=password]').keyup(function () {
-          //validate the length
           var pswd = $(this).val();
-
-          if (pswd.length < 8) {
-               $('#length').removeClass('valid').addClass('invalid');
-          }
-          else {
-               $('#length').removeClass('invalid').addClass('valid');
-          }
-
-          //validate letter
-          if (pswd.match(/[A-z]/)) {
+          
+          // Validate letter
+          if (pswd.match(/[a-z]/)) {
                $('#letter').removeClass('invalid').addClass('valid');
           }
           else {
                $('#letter').removeClass('valid').addClass('invalid');
           }
 
-          //validate capital letter
+          // Validate capital letter
           if (pswd.match(/[A-Z]/)) {
                $('#capital').removeClass('invalid').addClass('valid');
           }
@@ -28,12 +19,30 @@ $(document).ready(function () {
                $('#capital').removeClass('valid').addClass('invalid');
           }
 
-          //validate number
+          // Validate number
           if (pswd.match(/\d/)) {
                $('#number').removeClass('invalid').addClass('valid');
           }
           else {
                $('#number').removeClass('valid').addClass('invalid');
+          }
+
+          // Validate special characters
+          var format = /^[!@£#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+          if (pswd.match(format)) {
+               $('#symbol').removeClass('invalid').addClass('valid');
+          }
+          else {
+               $('#symbol').removeClass('valid').addClass('invalid');
+          }
+
+          // Validate the length
+          if (pswd.length < 8) {
+               $('#length').removeClass('valid').addClass('invalid');
+          }
+          else {
+               $('#length').removeClass('invalid').addClass('valid');
           }
           
      // Show password requirements whenever user clicks in the password field

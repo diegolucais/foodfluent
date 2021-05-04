@@ -135,7 +135,7 @@ span {
      }
 
      .slogan {
-          font-size: 2.2rem;
+          font-size: 2rem;
      }
 
      .order-button {
@@ -144,5 +144,10 @@ span {
 
      .title-image {
           width: 80%;
+     }
+
+     /* Login */
+     .form-padding {
+          padding: 0 12% 0 12%;
      }
 }
