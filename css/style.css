@@ -1,14 +1,19 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
 
 /* General Styling */
 .container-fluid {
      padding: 0 12% 0 12%;
 }
 
+.login-text, .user-text, .menu-text {
+     font-family: "Itim";
+     text-align: center;
+}
+
 /* Navbar */
 .navbar {
-     padding: 5% 0 6% 0;
+     padding-top: 5%;
 }
 
 .navbar-brand {
@@ -23,6 +28,10 @@
 }
 
 /* Title Page */
+#home {
+     padding: 5% 0 5% 0;
+}
+
 .slogan {
      font-family: "Montserrat";
      font-size: 3rem;
@@ -36,29 +45,60 @@
 }
 
 .order-button {
-     margin: 10% 5% 5% 0;
+     margin-top: 10%;
+     margin-right: 5%;
 }
 
 .about-button {
-     margin: 10% 0 5% 0;
+     margin-top: 10%;
 }
 
 .title-image {
      width: 100%;
-     padding: 8% 0 5% 0;
+     padding-top: 8%;
 }
 
 /* Login */
+#login {
+     padding: 5% 0 5% 0;
+     background-color: #f6f5f5;
+}
+
+.form-padding {
+     padding: 0 30% 0 30%;
+}
+
+form {
+     font-family: "Roboto";
+}
+
+h6 {
+     padding-top: 3%;
+}
+
+.invalid {
+     color:#ec3f41;
+ }
+
+ .valid {
+     color:#3a7d34;
+ }
 
 /* Users */
+#users {
+     padding: 5% 0 5% 0;
+}
 
 /* Menu */
+#menu {
+     padding: 5% 0 5% 0;
+     background-color: #f6f5f5;
+}
 
 /* Footer */
 .copyright {
      text-align: center;
-     padding: 28px 0;
-     margin-top: 55px;
+     padding: 25px 0;
      background-color: #202020;
 }
 
@@ -76,18 +116,33 @@ span {
      font-size: 1rem;
 }
 
+/* Our Food */
+#ourfood {
+     padding: 5% 0 5% 0;
+}
+
+.ourfood-title {
+     font-family: "Pacifico";
+     font-size: 4rem;
+     text-align: center;
+}
+
 /* Styling for smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 920px) {
      /* Title Page */
      #home {
           text-align: center;
      }
 
      .slogan {
-          font-size: 2rem;
+          font-size: 2.2rem;
      }
 
      .order-button {
-          margin-right: 0;
+          margin-right: 2%;
+     }
+
+     .title-image {
+          width: 80%;
      }
 }
