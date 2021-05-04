@@ -1,0 +1,93 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&display=swap');
+
+/* General Styling */
+.container-fluid {
+     padding: 0 12% 0 12%;
+}
+
+/* Navbar */
+.navbar {
+     padding: 5% 0 6% 0;
+}
+
+.navbar-brand {
+     font-family: "Pacifico";
+     font-size: 2.5rem;
+}
+
+.nav-item {
+     font-family: "Itim";
+     font-size: 1.5rem;
+     font-weight: 500;
+}
+
+/* Title Page */
+.slogan {
+     font-family: "Montserrat";
+     font-size: 3rem;
+     font-weight: 900;
+     line-height: 1.5;
+}
+
+.highlight {
+     color: #f0a500;
+     text-decoration: solid;
+}
+
+.order-button {
+     margin: 10% 5% 5% 0;
+}
+
+.about-button {
+     margin: 10% 0 5% 0;
+}
+
+.title-image {
+     width: 100%;
+     padding: 8% 0 5% 0;
+}
+
+/* Login */
+
+/* Users */
+
+/* Menu */
+
+/* Footer */
+.copyright {
+     text-align: center;
+     padding: 28px 0;
+     margin-top: 55px;
+     background-color: #202020;
+}
+
+span {
+     color: #aca8a8;
+}
+
+.foodfluent {
+     font-family: "Pacifico";
+     font-size: 1.5rem;
+}
+
+.copyright-text {
+     font-family: "Montserrat";
+     font-size: 1rem;
+}
+
+/* Styling for smaller screens */
+@media (max-width: 800px) {
+     /* Title Page */
+     #home {
+          text-align: center;
+     }
+
+     .slogan {
+          font-size: 2rem;
+     }
+
+     .order-button {
+          margin-right: 0;
+     }
+}
