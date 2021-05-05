@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap');
 
 /* General Styling */
+section {
+     padding: 5% 0 5% 0;
+}
+
 .container-fluid {
      padding: 0 12% 0 12%;
 }
 
 .login-text, .user-text, .menu-text {
      font-family: "Itim";
+     font-weight: 800;
      text-align: center;
 }
 
@@ -28,10 +33,6 @@
 }
 
 /* Title Page */
-#home {
-     padding: 5% 0 5% 0;
-}
-
 .slogan {
      font-family: "Montserrat";
      font-size: 3rem;
@@ -60,7 +61,6 @@
 
 /* Login */
 #login {
-     padding: 5% 0 5% 0;
      background-color: #f6f5f5;
 }
 
@@ -72,16 +72,40 @@ form {
      font-family: "Roboto";
 }
 
-h6 {
-     padding-top: 3%;
-}
-
-.invalid {
-     color:#ec3f41;
+#password-info h6 {
+     font-size: 15px;
+     text-align: center;
+     padding: 15px 0 8px 0;
  }
 
- .valid {
-     color:#3a7d34;
+#password-info {
+     position: absolute;
+     width: 260px;
+     background: #fefefe;
+     border-radius: 5px;
+     box-shadow: 0 1px 3px #ccc;
+     border: 1px solid #ddd;
+     display: none;
+ }
+
+ #password-info::before {
+     content: "\25B2";
+     position: absolute;
+     top: -12px;
+     right: 45%;
+     font-size: 14px;
+     line-height: 14px;
+     color: #ddd;
+     text-shadow: none;
+     display: block;
+ }
+
+.valid {
+     color: green;
+ }
+
+.invalid {
+     color: red;
  }
 
 /* Users */
@@ -91,8 +115,15 @@ h6 {
 
 /* Menu */
 #menu {
-     padding: 5% 0 5% 0;
      background-color: #f6f5f5;
+}
+
+.meals {
+     font-family: "Pacifico";
+     font-weight: 400;
+     font-size: 1.8rem;
+     text-align: center;
+     padding: 5% 0 5% 0;
 }
 
 /* Footer */
@@ -113,7 +144,7 @@ span {
 
 .copyright-text {
      font-family: "Montserrat";
-     font-size: 1rem;
+     font-size: 1.2rem;
 }
 
 /* Our Food */

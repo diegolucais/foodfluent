@@ -1,9 +1,9 @@
-/* Password Validator */
-$(document).ready(function () {
-     $('input[type=password]').keyup(function () {
+/* Password Validator (JQuery) */
+$(document).ready(function() {
+     $('input[type=password]').keyup(function() {
           var pswd = $(this).val();
           
-          // Validate letter
+          // Lower case letters validation
           if (pswd.match(/[a-z]/)) {
                $('#letter').removeClass('invalid').addClass('valid');
           }
@@ -11,7 +11,7 @@ $(document).ready(function () {
                $('#letter').removeClass('valid').addClass('invalid');
           }
 
-          // Validate capital letter
+          // Upper case letters validation
           if (pswd.match(/[A-Z]/)) {
                $('#capital').removeClass('invalid').addClass('valid');
           }
@@ -19,7 +19,7 @@ $(document).ready(function () {
                $('#capital').removeClass('valid').addClass('invalid');
           }
 
-          // Validate number
+          // Numbers validation
           if (pswd.match(/\d/)) {
                $('#number').removeClass('invalid').addClass('valid');
           }
@@ -27,17 +27,15 @@ $(document).ready(function () {
                $('#number').removeClass('valid').addClass('invalid');
           }
 
-          // Validate special characters
-          var format = /^[!@£#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-
-          if (pswd.match(format)) {
+          // Special characters validation
+          if (pswd.match(/[^A-Za-z0-9]/)) {
                $('#symbol').removeClass('invalid').addClass('valid');
           }
           else {
                $('#symbol').removeClass('valid').addClass('invalid');
           }
 
-          // Validate the length
+          // Length validation
           if (pswd.length < 8) {
                $('#length').removeClass('valid').addClass('invalid');
           }
@@ -46,9 +44,29 @@ $(document).ready(function () {
           }
           
      // Show password requirements whenever user clicks in the password field
-     }).focus(function () {
+     }).focus(function() {
           $('#password-info').show();
-     }).blur(function () {
+     }).blur(function() {
           $('#password-info').hide();
      });
 });
+
+/* Login button action */
+function welcome() {
+     //Variables to save username and password
+     var username = document.getElementById("username").value;
+     var password = document.getElementById("password").value;
+     
+     // Show welcome message if user entered username, and password meets the requirements
+     if (username != 0 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/\d/) && password.match(/[^A-Za-z0-9]/) && password.length >= 8) {
+          window.alert("Welcome " + username + "!");
+     }
+     // Show message if user doesn't type anything on both username and password
+     else if (username == 0 || password == 0) {
+          window.alert("Enter a username and a password, please.");
+     }
+     // Show message if password doesn't meet the requirements
+     else {
+          window.alert("The password you entered is invalid! Please, try again.")
+     }
+}
