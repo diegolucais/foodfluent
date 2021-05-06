@@ -1,4 +1,4 @@
-/* Password Validator (JQuery) */
+/* Password Validator */
 $(document).ready(function() {
      $('input[type=password]').keyup(function() {
           var pswd = $(this).val();
