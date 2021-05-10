@@ -32,7 +32,7 @@
               <a class="nav-link" href="#login">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#users">Users</a>
+              <a class="nav-link" href="#customers">Customers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#menu">Menu</a>
@@ -88,11 +88,11 @@
         </form>
       </div>
     </section>
-    <!-- Users -->
-    <section id="users">
+    <!-- Customers -->
+    <section id="customers">
       <div class="container-fluid">
-        <h2 class="user-text">USERS</h2>
-      </div>
+          <div id="output"></div>
+        </div>
     </section>
     <!-- Menu -->
     <section id="menu">
@@ -322,42 +322,29 @@
     <section id="cart">
       <div class="container-fluid">
         <h2 class="cart-text">CART</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <p>ITEM:</p>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <p>PRICE:</p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <p>QUANTITY:</p>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <p>TOTAL:</p>
-          </div>
-          <hr>
-        </div>
-        <div class="row cart-row">
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <img class="cart-image" src="images/drink-3.jpeg">
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <p class="cart-item-title">Fanta 330ml</p>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <p class="cart-price">€1.50</p>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <input class="cart-quantity" type="number" value="1" style="width: 50px;">
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <button class="cart-remove btn btn-sm btn-danger">REMOVE</button>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2">
-            <p class="cart-subtotal"></p>
-          </div>
-        </div>
-      </div>
+        <table class="table" style="width: 80%; text-align: center;">
+          <tr>
+            <thead>
+            <th>ITEM</th>
+            <th>DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>TOTAL</th>
+            </thead>
+          </tr>
+          <tr>
+            <tbody>
+            <td><img class="cart-image" src=""></td>
+            <td><p class="cart-description"></p></td>
+            <td><p class="cart-price"></p></td>
+            <td><input class="cart-quantity" type="number" value="1" style="width: 50px;">
+              <button class="cart-remove btn btn-sm btn-danger">REMOVE</button>
+            </td>
+            <td><p class="cart-total"></p></td>
+            </tbody>
+          </tr>
+        </table>
+
       </div>
     </section>
     <!-- Footer -->
@@ -368,5 +355,7 @@
         </div>
       </div>
     </footer>
+    <!-- Random User API JavaScript -->
+    <script src="javascript/random-user-api.js"></script>
 </body>
 </html>

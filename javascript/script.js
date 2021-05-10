@@ -70,5 +70,3 @@ function welcome() {
           window.alert("The password you entered is either invalid or does not meet the requirements! Please, try again.")
      }
 }
-
-/* Shopping Cart */

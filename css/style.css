@@ -109,10 +109,15 @@ form {
      color: red;
  }
 
-/* Users */
-#users {
+/* Customers */
+#customers {
      background-color: #f6f5f5;
-     padding: 5% 0 5% 0;
+     padding: 2% 0 5% 0;
+}
+
+.welcome-users {
+     font-family: "Pacifico";
+     padding-bottom: 5%;
 }
 
 /* Menu */
@@ -136,10 +141,20 @@ form {
 /* Cart */
 #cart {
      background-color: #f6f5f5;
+     /* display: none; */
+}
+
+table {
+     text-align: center;
+     margin: auto;
 }
 
 .cart-image {
-     width: 50px
+     width: 60px
+}
+
+.cart-remove {
+     margin-left: 5px;
 }
 
 /* Footer */
