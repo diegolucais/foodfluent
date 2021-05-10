@@ -67,6 +67,8 @@ function welcome() {
      }
      // Show message if password doesn't meet the requirements
      else {
-          window.alert("The password you entered is invalid! Please, try again.")
+          window.alert("The password you entered is either invalid or does not meet the requirements! Please, try again.")
      }
 }
+
+/* Shopping Cart */
