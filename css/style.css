@@ -10,7 +10,7 @@ section {
      padding: 0 12% 0 12%;
 }
 
-.login-text, .user-text, .menu-text, .cart-text {
+.login-text, .menu-text, .cart-text {
      font-family: "Itim";
      font-weight: 800;
      text-align: center;
@@ -47,11 +47,6 @@ section {
 }
 
 .order-button {
-     margin-top: 10%;
-     margin-right: 5%;
-}
-
-.about-button {
      margin-top: 10%;
 }
 
@@ -118,6 +113,7 @@ form {
 .welcome-users {
      font-family: "Pacifico";
      padding-bottom: 5%;
+     text-align: center;
 }
 
 /* Menu */
@@ -138,6 +134,12 @@ form {
      margin-bottom: 5%;
 }
 
+hr {
+     border: 3px solid #f0a500;
+     border-radius: 3px;
+     margin-top: 5%;
+}
+
 /* Cart */
 #cart {
      background-color: #f6f5f5;
@@ -146,7 +148,6 @@ form {
 
 table {
      text-align: center;
-     margin: auto;
 }
 
 .cart-image {
@@ -164,7 +165,7 @@ table {
      background-color: #202020;
 }
 
-span {
+.copyright span {
      color: #aca8a8;
 }
 
@@ -176,17 +177,6 @@ span {
 .copyright-text {
      font-family: "Montserrat";
      font-size: 1.2rem;
-}
-
-/* Our Food */
-#ourfood {
-     padding: 5% 0 5% 0;
-}
-
-.ourfood-title {
-     font-family: "Pacifico";
-     font-size: 4rem;
-     text-align: center;
 }
 
 /* Styling for smaller screens */
