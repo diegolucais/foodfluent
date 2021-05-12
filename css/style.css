@@ -10,13 +10,6 @@ section {
      padding: 0 12% 0 12%;
 }
 
-.login-text, .menu-text, .cart-text {
-     font-family: "Itim";
-     font-weight: 800;
-     text-align: center;
-     padding-bottom: 5%;
-}
-
 /* Navbar */
 .navbar {
      padding-top: 5%;
@@ -58,6 +51,13 @@ section {
 /* Login */
 #login {
      background-color: #f6f5f5;
+}
+
+.login-text {
+     font-family: "Itim";
+     font-weight: 800;
+     text-align: center;
+     padding-bottom: 5%;
 }
 
 .form-padding {
@@ -116,7 +116,13 @@ form {
      text-align: center;
 }
 
-/* Menu */
+/* Menu & Cart */
+.menu-text {
+     font-family: "Itim";
+     font-weight: 800;
+     text-align: center;
+}
+
 .meals {
      font-family: "Pacifico";
      font-weight: 400;
@@ -138,24 +144,6 @@ hr {
      border: 3px solid #f0a500;
      border-radius: 3px;
      margin-top: 5%;
-}
-
-/* Cart */
-#cart {
-     background-color: #f6f5f5;
-     /* display: none; */
-}
-
-table {
-     text-align: center;
-}
-
-.cart-image {
-     width: 60px
-}
-
-.cart-remove {
-     margin-left: 5px;
 }
 
 /* Footer */
