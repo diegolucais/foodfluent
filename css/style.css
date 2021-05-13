@@ -156,13 +156,12 @@ hr {
 .cart-header {
      font-weight: bold;
      font-size: 1.2rem;
-     color: #333;
    }
    
 .cart-column {
      display: flex;
      align-items: center;
-     border-bottom: 1px solid black;
+     border-bottom: 1px solid;
      padding: 1% 0 1% 0;
 }
    
@@ -171,29 +170,26 @@ hr {
 }
    
 .cart-item {
-     width: 60%;
+     width: 40%;
 }
    
 .cart-price {
      width: 20%;
-     font-size: 1.2rem;
-     color: #333;
+     font-size: 1.1rem;
 }
    
 .cart-quantity {
-     width: 30%;
+     width: 40%;
 }
    
 .cart-item-title {
-     color: #333;
      margin-left: 2%;
-     font-size: 1.2rem;
+     font-size: 1.1rem;
 }
    
 .cart-item-image {
-     width: 75px;
+     width: 12%;
      height: auto;
-     border-radius: 10px;
 }
    
 .cart-quantity-input {
@@ -203,7 +199,7 @@ hr {
      border: 1px solid #56CCF2;
      background-color: transparent;
      text-align: center;
-     font-size: 1.2em;
+     font-size: 1.1em;
      margin-right: 1.2rem;
 }
    
