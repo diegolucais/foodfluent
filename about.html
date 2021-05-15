@@ -6,11 +6,11 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Animate, Typewriter, Bootstrap & CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
      <link rel="stylesheet" href="css/style.css">
-     <!-- Bootstrap JS, JQuery, Font Awesome & JavaScript -->
+     <!-- Bootstrap JS, Typewriterjs, JQuery, Font Awesome & JavaScript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
      <script src="javascript/script.js"></script>
@@ -36,11 +36,14 @@
             <li class="nav-item">
               <a class="nav-link active" href="about.html">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://github.com/thediegolucas/foodfluent"><i class="fab fa-github"></i></a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
-    <!-- About -->
+    <!-- Title Page (About) -->
     <section id="about-title" class="animate__animated animate__fadeIn">
       <div class="container-fluid">
         <div class="row">
@@ -49,23 +52,86 @@
             <script type="text/javascript">
               const instance = new Typewriter('#app', {
                 loop: true,
+                delay: 30,
               });
               instance.typeString('We are at the <i class="fas fa-heart" style="color: red;"></i> of one of the most intercultural cities in the world!</h1>')
-                .pauseFor(1000)
+                .pauseFor(2000)
+                .deleteAll(5)
+                .typeString('<span class="welcome-users">Fáilte go FoodFluent</span><br><i class="fas fa-utensils"></i> <i class="fas fa-heart"></i> <i class="fas fa-compass"></i>')
+                .pauseFor(2500)
                 .deleteAll(5)
                 .start();
             </script>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img class="rounded-circle title-image" src="images/ireland-map.jpg">
+            <img class="rounded-circle ireland animate__animated animate__fadeInBottomRight" src="images/ireland-map.jpg">
           </div>
         </div>
       </div>
     </section>
-    <!-- Content -->
-    <section id="content">
+    <!-- About -->
+    <section id="about">
       <div class="container-fluid">
-        
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="fas fa-utensils icons"></i>
+          <p class="description">Since 2005, we serve great food with a variety of options. FoodFluent is for everyone!</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="fas fa-heart icons" style="color: red;"></i>
+          <p class="description">You can find us at the heart. We are in front of the Spire of Dublin.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="fas fa-compass icons"></i>
+          <p class="description">People from all around the world have visited us and tried our delicious food.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Reviews -->
+    <section id="review" class="animate__animated animate__fadeIn">
+      <div class="container-fluid">
+        <h1 class="welcome-users world">From around the world,</h1>
+        <h1 class="welcome-users">this is what some of our customers are saying</h1>
+        <br>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <h3 class="d-block w-100">"The food at FoodFluent is incredible! I've never seen such a lively place with amazing staff. It's definelely <em>the</em> go-to place to have a great time."</h3>
+              <br>
+              <img class="reviewer" src="images/review-1.jpg">
+              <p>Monique Besseling – Auckland, New Zealand</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <h3 class="d-block w-100">"I came to Ireland to study and this place is where I go to after a long day and I want to have a nice dinner with my girlfriend. I love their Maltesers Ice-cream Cake!</h3>
+              <br>
+              <img class="reviewer" src="images/review-2.jpg">
+              <p>Roger Knight – North Valley, USA</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <h3 class="d-block w-100">"I go to FoodFluent since it opened in 2005. My friends and I love the food. We reckon we've already tried almost everything on their menu. Nice place for a pint too."</h3>
+              <br>
+              <img class="reviewer" src="images/review-3.jpg">
+              <p>Sean Ryan – Dublin, Ireland</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <h3 class="d-block w-100">"I was delighted to have found this place during my last visit to Ireland. It made my day and now I always go back there. 10 out of 10!"</h3>
+              <br>
+              <img class="reviewer" src="images/review-4.jpg">
+              <p>Jenny Fabre – Derby, United Kingdom</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br>
+        <h1 class="invite">Come and try for yourself!</h1>
       </div>
     </section>
     <!-- Footer -->

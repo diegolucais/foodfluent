@@ -6,6 +6,10 @@ section {
      padding: 5% 0 5% 0;
 }
 
+.fa-github {
+     font-size: 2rem;
+}
+
 .section-title {
      font-family: "Itim";
      font-weight: 800;
@@ -16,7 +20,13 @@ section {
      padding: 0 12% 0 12%;
 }
 
-#login, #cart, #content {
+.welcome-users {
+     font-family: "Pacifico";
+     padding-bottom: 5%;
+     text-align: center;
+}
+
+#login, #cart, #about {
      background-color: #f6f5f5;
 }
 
@@ -110,12 +120,6 @@ form {
 /* Customers */
 #customers {
      padding: 2% 0 5% 0;
-}
-
-.welcome-users {
-     font-family: "Pacifico";
-     padding-bottom: 5%;
-     text-align: center;
 }
 
 /* Menu */
@@ -223,11 +227,7 @@ hr {
      font-size: 1.5rem;
 }
 
-/* About */
-section#about {
-     padding-top: 0;
-}
-
+/* Title Page (About) */
 .slogan-2 {
      font-family: "Montserrat";
      font-size: 2.5rem;
@@ -237,8 +237,55 @@ section#about {
      padding: 15% 0 5% 0;
 }
 
-/* Content */
+.ireland {
+     width: 100%;
+}
 
+/* About */
+section#about {
+     padding-bottom: 2%;
+}
+.icons {
+     text-align: center;
+     font-size: 5rem;
+     margin: 0 40% 5% 40%;
+}
+
+.description {
+     font-family: "Itim";
+     font-size: 1.5rem;
+     text-align: center;
+     padding-bottom: 5%;
+}
+
+/* Reviews */
+section#review .container-fluid {
+     padding: 0;
+}
+
+.world {
+     padding-bottom: 0;
+}
+
+.carousel-item {
+     font-family: "Montserrat";
+     text-align: center;
+     padding: 0 20% 0 20%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+     background-color: black;
+}
+
+.reviewer {
+     padding-bottom: 3%;
+}
+
+.invite {
+     font-family: "Pacifico";
+     text-align: center;
+     padding-top: 5%;
+}
 
 /* Footer */
 .copyright {
@@ -279,7 +326,7 @@ section#about {
 
      /* About */
      .slogan-2 {
-          font-size: 1.8rem;
+          font-size: 1.7rem;
           padding: 5% 0;
      }
 }
